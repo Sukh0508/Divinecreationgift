@@ -749,4 +749,7 @@ html {
   .cux-box{
     width: 100%;
   }
+  .box-que{
+    padding: 20px 20px;
+  }
 }
