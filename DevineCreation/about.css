@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-head{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    padding: 30px 90px;
+}
+.about-head h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+.about-para span{
+    font-size: 22px;
+    font-weight: 500;
+
+}
+.about-para p{
+    padding: 10px 0px;
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+}
+hr{
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #c9a96e;
+}
+@media (max-width:650px) {
+    .about-head{
+        padding: 0px 20px;
+    }
+    .about-para p{
+        width: 100%;
+    }
+}

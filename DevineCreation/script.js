@@ -169,31 +169,22 @@ newproduct.forEach((ele) => {
   latestproduct.innerHTML += latest;
 });
 
-let ans = document.querySelectorAll(".second-que")
-let minu = document.querySelectorAll(".minu")
-let showque = document.querySelectorAll(".add-q")
+let ans = document.querySelectorAll(".second-que");
+let minu = document.querySelectorAll(".minu");
+let showque = document.querySelectorAll(".add-q");
 
 showque.forEach((btn, index) => {
-
   btn.addEventListener("click", function () {
-
-    ans[index].style.display = "flex"
-    showque[index].style.display = "none"
-    minu[index].style.display = "inline"
-
-  })
-
-})
+    ans[index].style.display = "flex";
+    showque[index].style.display = "none";
+    minu[index].style.display = "inline";
+  });
+});
 
 minu.forEach((btn, index) => {
-
   btn.addEventListener("click", function () {
-
-    ans[index].style.display = "none"
-    showque[index].style.display = "inline"
-    minu[index].style.display = "none"
-
-  })
-
-})
-
+    ans[index].style.display = "none";
+    showque[index].style.display = "inline";
+    minu[index].style.display = "none";
+  });
+});

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conatct{
+    width: 100%;
+    height: auto;
+    padding: 30px 90px;
+}
+.contact-det{
+    width: 90%;
+    height: auto;
+    padding: 30px 0px;
+
+}
+.contact-det b{
+    font-size: 22px;
+}
+.contact-det p{
+    padding: 10px 0px;
+    text-align: justify;
+    font-size: 20px;
+}
+.mob-contact{
+    width: 100%;
+    padding: 20px 0px;
+
+}
+.mob-contact a{
+    font-size: 20px;    
+    color: black;
+    text-decoration: none;
+}
+hr{
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #c9a96e;
+}
+@media (max-width:650px) {
+    .conatct{
+        padding: 0px 20px;
+    }
+    .contact-det{
+        width: 100%;
+    }
+    .mob-contact{
+        
+    }
+    
+}
