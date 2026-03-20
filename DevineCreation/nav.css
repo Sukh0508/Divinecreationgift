@@ -1,3 +1,16 @@
+:root {
+      --caviar: #1a1a1a;           /* deepest black-grey */
+      --pearl-grey: #bab7b4;        /* luminous grey with warmth */
+      --suede: #8b7a6bc2;             /* rich medium skin-grey */
+      --champagne: #e7d6c5;         /* bubbly skin tone */
+      --bisque-deep: #d8bfaa;       /* deeper skin for accents */
+      --gold: #b49a7b;              /* understated gold – warm metallic */
+      --gold-leaf: #cbb293;         /* soft gilding */
+      --marble: #f9f3ec;            /* off-white with warmth */
+      --graphite: #4f4a45b3;          /* elegant dark grey */
+      --shadow-soft: rgba(40, 30, 20, 0.08);
+      --shadow-lux: rgba(0, 0, 0, 0.12);
+    }
 .header {
   backdrop-filter: blur(14px) saturate(180%);
   -webkit-backdrop-filter: blur(14px) saturate(180%);
@@ -99,7 +112,7 @@
     top: 80px;
     left: 0; 
     flex-direction: column;
-    background-color: #0C0C10;
+    background-color: var(--caviar);
     color: white;
     width: 100%;
     padding: 20px 0px;

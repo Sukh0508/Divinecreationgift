@@ -2,20 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-   font-family: "Caveat Brush", cursive;
-  font-weight:600;
+   font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
   font-style: normal;
 }
     :root {
       --caviar: #1a1a1a;           /* deepest black-grey */
-      --pearl-grey: #e6e1db;        /* luminous grey with warmth */
-      --suede: #8b7a6b;             /* rich medium skin-grey */
+      --pearl-grey: #bab7b4;        /* luminous grey with warmth */
+      --suede: #8b7a6bc2;             /* rich medium skin-grey */
       --champagne: #e7d6c5;         /* bubbly skin tone */
       --bisque-deep: #d8bfaa;       /* deeper skin for accents */
       --gold: #b49a7b;              /* understated gold – warm metallic */
       --gold-leaf: #cbb293;         /* soft gilding */
       --marble: #f9f3ec;            /* off-white with warmth */
-      --graphite: #4f4a45;          /* elegant dark grey */
+      --graphite: #4f4a45b3;          /* elegant dark grey */
       --shadow-soft: rgba(40, 30, 20, 0.08);
       --shadow-lux: rgba(0, 0, 0, 0.12);
     }
@@ -24,7 +25,7 @@ body {
   /* background-color: #0c0c10;
   color: #e3e3e8; */
   overflow-x: hidden;
-     background-color: var(--pearl-grey);
+     background-color: var(--graphite);
       color: var(--caviar);
       font-family: 'Inter', sans-serif;
       font-weight: 300;
@@ -307,7 +308,8 @@ html {
   padding: 10px 0px;
   font-size: 18px;
 }
-.productadd button {
+.productadd a {
+  text-decoration: none;
   background: transparent;
   border: 1.5px solid var(--caviar);
   color: var(--caviar);
@@ -326,7 +328,7 @@ html {
 /* .productadd button i {
   font-size: 1rem;
 } */
-.productadd button:hover {
+.productadd a:hover {
  background-color: #c9a96e;
   border-color: var(--caviar);
   color: #0c0c10;
@@ -530,7 +532,8 @@ html {
   color: #a8a8b3;
   margin-top: 0.5rem;
 }
-.banner-btn {
+.banner-content a {
+  text-decoration: none;
   background: #c9a96e;
   border: none;
   color: #0c0c10;
@@ -545,14 +548,14 @@ html {
   transition: 0.3s;
   box-shadow: 0 15px 20px -8px rgba(201, 169, 110, 0.2);
 }
-.banner-btn i {
+.banner-content a i {
   transition: transform 0.3s;
 }
-.banner-btn:hover {
+.banner-content a:hover {
   background: #dbbc7c;
   transform: translateY(-5px) scale(1.02);
 }
-.banner-btn:hover i {
+.banner-content:hover i {
   transform: rotate(10deg) translateX(5px);
 }
 .product-grid-latest {

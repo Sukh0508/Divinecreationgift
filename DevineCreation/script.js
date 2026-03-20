@@ -37,7 +37,7 @@ categoriecon.forEach((pro) => {
         <h3>${pro.head}</h3>
         <p>${pro.Description}</p>
         <span>${pro.total}</span>
-        <button>${pro.btn}</button>
+      <a href="product.html">${pro.btn}</a>
     </div>
     `;
 

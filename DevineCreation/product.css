@@ -5,14 +5,14 @@
 }
  :root {
       --caviar: #1a1a1a;           /* deepest black-grey */
-      --pearl-grey: #e6e1db;        /* luminous grey with warmth */
+       --pearl-grey: #bab7b4;        /* luminous grey with warmth */
       --suede: #8b7a6b;             /* rich medium skin-grey */
       --champagne: #e7d6c5;         /* bubbly skin tone */
       --bisque-deep: #d8bfaa;       /* deeper skin for accents */
       --gold: #b49a7b;              /* understated gold – warm metallic */
       --gold-leaf: #cbb293;         /* soft gilding */
       --marble: #f9f3ec;            /* off-white with warmth */
-      --graphite: #4f4a45;          /* elegant dark grey */
+     --graphite: #4f4a45b3;           /* elegant dark grey */
       --shadow-soft: rgba(40, 30, 20, 0.08);
       --shadow-lux: rgba(0, 0, 0, 0.12);
     }
@@ -56,7 +56,7 @@ h2{
 }
 .all-product-add{
 /* border: 2px solid gold; */
-    /* background:; */
+    background: var(--pearl-grey);
   /* border: 2px solid red; */
   backdrop-filter: blur(4px);
   border-radius: 32px;
@@ -177,6 +177,7 @@ h2{
   /* border: 2px solid rgba(201, 169, 110, 0.08); */
   transition: all 0.4s;
 }
+
 .mainconbtn button:hover{
   background: #c9a96e;
   color: black;
