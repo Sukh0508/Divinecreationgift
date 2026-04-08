@@ -188,3 +188,53 @@ minu.forEach((btn, index) => {
     minu[index].style.display = "none";
   });
 });
+
+// Scroll Animation Observer for Categories Section
+function initializeCategoriesScrollAnimations() {
+  const categoriesSection = document.querySelector(".categories");
+  const categoryCards = document.querySelectorAll(".productadd");
+
+  if (!categoriesSection) return;
+
+  // Create Intersection Observer options
+  const observerOptions = {
+    threshold: 0.1, // Trigger when 10% of element is in view
+    rootMargin: "0px 0px -50px 0px" // Start animation slightly before fully in view
+  };
+
+  // Observer callback
+  const observerCallback = (entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Add animation to the intersecting element
+        if (entry.target === categoriesSection) {
+          entry.target.classList.add("scroll-animate");
+        } else {
+          // Stagger animation for individual cards
+          entry.target.classList.add("scroll-animate--card");
+          entry.target.style.animationDelay = `${index * 0.1}s`;
+        }
+        // Stop observing after animation is triggered
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  // Create observer instance
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  // Observe categories section
+  observer.observe(categoriesSection);
+
+  // Observe individual category cards
+  categoryCards.forEach((card) => {
+    observer.observe(card);
+  });
+}
+
+// Initialize animations when DOM is ready
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeCategoriesScrollAnimations);
+} else {
+  initializeCategoriesScrollAnimations();
+}

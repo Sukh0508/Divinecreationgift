@@ -799,15 +799,14 @@ desbtn.forEach((btn, index) => {
     // productdetail.appendChild(btnenqury)
     // productdetail.appendChild(req)
 
-    detailmain.appendChild(productdetail);
-
+    detailmain.appendChild(desdetailimg);
     desdetailimg.appendChild(img);
     desdetailimg.appendChild(social);
     desdetailimg.appendChild(ratting);
-    detailmain.appendChild(desdetailimg);
+    
+    detailmain.appendChild(productdetail);
 
-    main.append(detailmain)
-    main.append(productdetail);
+    main.append(detailmain);
   });
 });
 

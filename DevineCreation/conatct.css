@@ -3,49 +3,98 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+  --gold: #d4af7a;
+  --gold-light: #e6c9a8;
+  --onyx-text: #0f0f0f;
+  --grey-dark: #2c2c2c;
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .conatct{
     width: 100%;
     height: auto;
-    padding: 30px 90px;
+    padding: 3rem 4rem;
+    background: linear-gradient(135deg, rgba(212, 175, 122, 0.03), transparent);
 }
+
 .contact-det{
     width: 90%;
     height: auto;
-    padding: 30px 0px;
+    padding: 2rem 0;
+    transition: transform var(--transition-base);
+}
 
+.contact-det:hover {
+  transform: translateX(4px);
 }
+
 .contact-det b{
-    font-size: 22px;
+    font-size: clamp(1.3rem, 3vw, 22px);
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.3px;
+    display: block;
+    /* margin-bottom: 0.8rem; */
 }
+
 .contact-det p{
-    padding: 10px 0px;
+    /* padding: 0.5rem 0; */
     text-align: justify;
-    font-size: 20px;
+    font-size: clamp(0.95rem, 2vw, 20px);
+    line-height: 1.8;
+    color: #333333;
 }
+
 .mob-contact{
     width: 100%;
-    padding: 20px 0px;
+    /* padding: 1rem 0; */
+}
 
-}
 .mob-contact a{
-    font-size: 20px;    
-    color: black;
+    font-size: clamp(1rem, 2.5vw, 20px);
+    color: var(--onyx-text);
     text-decoration: none;
+    transition: all var(--transition-base);
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }
+
+.mob-contact a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  transition: width var(--transition-base);
+}
+
+.mob-contact a:hover {
+  color: var(--gold);
+}
+
+.mob-contact a:hover::after {
+  width: 100%;
+}
+
 hr{
     width: 90%;
-    margin: 20px auto;
-    border: 1px solid #c9a96e;
+    margin: 2rem auto;
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(212, 175, 122, 0.2), rgba(212, 175, 122, 0.5), rgba(212, 175, 122, 0.2));
 }
+
 @media (max-width:650px) {
     .conatct{
-        padding: 0px 20px;
+        padding: 2rem 1.5rem;
     }
     .contact-det{
         width: 100%;
     }
-    .mob-contact{
-        
-    }
-    
 }
